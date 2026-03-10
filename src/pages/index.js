@@ -8,7 +8,6 @@ export default function Home() {
   const introRef = useRef();
 
   useEffect(() => {
-    // GSAP animations for the homepage
     gsap.from(nameRef.current, {
       y: 100,
       opacity: 0,
