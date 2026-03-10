@@ -39,7 +39,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    // Add your form submission logic here
+    // Add form submission logic (e.g., API call)
   };
 
   return (
@@ -132,36 +132,20 @@ export default function Contact() {
               <div className={styles.contactDetails}>
                 <h5>Contact Details</h5>
                 <ul className={styles.linksWrap}>
-                  <li className={styles.btnLinkExternal}>
-                    <a href="mailto:ds.dhruvsoni1603@gmail.com">ds.dhruvsoni1603@gmail.com</a>
-                  </li>
-                  <li className={styles.btnLinkExternal}>
-                    <a href="tel:+919316025578">+91 93160 25578</a>
-                  </li>
+                  <li className={styles.btnLinkExternal}><a href="mailto:ds.dhruvsoni1603@gmail.com">ds.dhruvsoni1603@gmail.com</a></li>
+                  <li className={styles.btnLinkExternal}><a href="tel:+919316025578">+91 93160 25578</a></li>
                 </ul>
                 <h5>Personal Details</h5>
                 <ul className={styles.linksWrap}>
-                  <li>
-                    <p>Dhruv Soni</p>
-                  </li>
-                  <li>
-                    <p>Location: The Bharat</p>
-                  </li>
+                  <li><p>Dhruv Soni</p></li>
+                  <li><p>Location: The Bharat</p></li>
                 </ul>
                 <h5>Socials</h5>
                 <ul className={styles.linksWrap}>
-                  <li className={styles.btnLinkExternal}>
-                    <a href="https://github.com/DhruvSoni1611" target="_blank" rel="noopener noreferrer">Github</a>
-                  </li>
-                  <li className={styles.btnLinkExternal}>
-                    <a href="https://www.instagram.com/dhruv.soni_1611/" target="_blank" rel="noopener noreferrer">Instagram</a>
-                  </li>
-                  <li className={styles.btnLinkExternal}>
-                    <a href="https://x.com/DhruvSoni1611" target="_blank" rel="noopener noreferrer">X</a>
-                  </li>
-                  <li className={styles.btnLinkExternal}>
-                    <a href="https://www.linkedin.com/in/dhruvsoni11/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                  </li>
+                  <li className={styles.btnLinkExternal}><a href="https://github.com/DhruvSoni1611" target="_blank" rel="noopener noreferrer">Github</a></li>
+                  <li className={styles.btnLinkExternal}><a href="https://www.instagram.com/dhruv.soni_1611/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                  <li className={styles.btnLinkExternal}><a href="https://x.com/DhruvSoni1611" target="_blank" rel="noopener noreferrer">X</a></li>
+                  <li className={styles.btnLinkExternal}><a href="https://www.linkedin.com/in/dhruvsoni11/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                 </ul>
               </div>
             </div>
