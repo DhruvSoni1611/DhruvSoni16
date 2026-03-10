@@ -1,0 +1,100 @@
+:root {
+  --color-white: #ffffff;
+  --color-dark: #1c1d20;
+  --color-dark-dark: #121212;
+  --color-gray: #f5f5f5;
+  --color-lightgray: #e0e0e0;
+  --gap-padding: 1.5rem;
+  --container-padding: 2rem;
+  --section-padding: 5rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'NeueMontreal-Regular', sans-serif;
+  background: var(--color-white);
+  color: var(--color-dark);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+}
+
+.btn-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-dark);
+  transform: translateY(76%);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-click:hover .btn-fill {
+  transform: translateY(0%);
+}
+
+.btn-click {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0.75rem 1.5rem;
+  color: var(--color-dark);
+  background: transparent;
+  border: 1px solid var(--color-dark);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.btn-text-inner {
+  position: relative;
+  z-index: 1;
+  color: inherit;
+}
